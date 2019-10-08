@@ -1,0 +1,11 @@
+<ion-content>
+	<ion-list>
+		<ion-item
+			button
+			*ngFor="let tech of techs"
+			(click)="EmpresaSelected(tech.description)"
+		>
+			<ion-label>{{ tech.title }}</ion-label>
+		</ion-item>
+	</ion-list>
+</ion-content>
